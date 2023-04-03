@@ -1,0 +1,27 @@
+name: "My JavaScript Action"
+
+description: "Simple greeting with GutHub Actions"
+
+inputs:
+  first-greeting:
+    description: "Who would you like to gree in the console"
+    required: true
+    default: "Hubot"
+  second-greeting:
+    description: "Another person to greet"
+    required: true
+    default: "Mona"
+  third-greeting:
+    description: "A third greeting"
+    required: true
+    default: "ferdlestier"
+  last-one-greeted:
+    descroption: "The person greeted last"
+
+outputs:
+  last-one-greeted:
+    description: "The person greeted last"
+
+runs:
+  using: "node18"
+  main: "index.js"
